@@ -1,6 +1,6 @@
 {
   "name": "just-time",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "just-time allows you to work with formatted time strings (HH:mm:ss). Add, subtract, compare, create time strings without having to deal with dates and all that.",
   "main": "index.js",
   "scripts": {
