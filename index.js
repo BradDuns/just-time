@@ -46,7 +46,7 @@ function shortTimeStringFromSeconds(duration) {
   }
 }
 
-// Takes a formatted time string "hh:mm:ss" and returns the number of seconds
+// Takes a formatted time string "HH:mm:ss" and returns the number of seconds
 function durationFromTimeString(time) {
   if (checkTime(time)) {
     var arr = time.split(".")[0].split(":");
@@ -60,8 +60,8 @@ function durationFromTimeString(time) {
 }
 
 // Takes 2 formatted strings "hh:mm:ss" and returns a formatted
-// string "hh:mm:ss" of the difference between the end and the start.
-function subtractTimeStrings(start, end) {
+// string "hh:mm:ss" of the duration between the start and the end.
+function elapsedTimeString(start, end) {
   var duration = durationFromTimeString(end) - durationFromTimeString(start);
   return timeStringFromSeconds(duration);
 }
@@ -140,7 +140,7 @@ module.exports = {
   timeStringFromSeconds,
   shortTimeStringFromSeconds,
   durationFromTimeString,
-  subtractTimeStrings,
+  elapsedTimeString,
   addTimeStrings,
   compareTimeStrings,
   timeStringNow

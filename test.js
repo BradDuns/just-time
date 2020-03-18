@@ -27,14 +27,14 @@ assert.strictEqual(justTime.durationFromTimeString("00:01:11"), 71);
 assert.strictEqual(justTime.durationFromTimeString("00:15:00"), 900);
 assert.strictEqual(justTime.durationFromTimeString("01:30:01"), 5401);
 
-assert.strictEqual(justTime.subtractTimeStrings("00:00:00","00:00:45"), "00:00:45");
-assert.strictEqual(justTime.subtractTimeStrings("00:00:30","00:00:45"), "00:00:15");
-assert.strictEqual(justTime.subtractTimeStrings("00:00:30","00:01:45"), "00:01:15");
-assert.strictEqual(justTime.subtractTimeStrings("15:59:55","16:00:25"), "00:00:30");
-assert.strictEqual(justTime.subtractTimeStrings("17:09:00","17:10:35"), "00:01:35");
-assert.strictEqual(justTime.subtractTimeStrings("01:01:15","01:11:45"), "00:10:30");
-assert.strictEqual(justTime.subtractTimeStrings("10:00:00","11:50:27"), "01:50:27");
-assert.strictEqual(justTime.subtractTimeStrings("00:00:59","00:01:00"), "00:00:01");
+assert.strictEqual(justTime.elapsedTimeString("00:00:00","00:00:45"), "00:00:45");
+assert.strictEqual(justTime.elapsedTimeString("00:00:30","00:00:45"), "00:00:15");
+assert.strictEqual(justTime.elapsedTimeString("00:00:30","00:01:45"), "00:01:15");
+assert.strictEqual(justTime.elapsedTimeString("15:59:55","16:00:25"), "00:00:30");
+assert.strictEqual(justTime.elapsedTimeString("17:09:00","17:10:35"), "00:01:35");
+assert.strictEqual(justTime.elapsedTimeString("01:01:15","01:11:45"), "00:10:30");
+assert.strictEqual(justTime.elapsedTimeString("10:00:00","11:50:27"), "01:50:27");
+assert.strictEqual(justTime.elapsedTimeString("00:00:59","00:01:00"), "00:00:01");
 
 let times = [
   "00:00:50", "00:09:10", "00:50:00", "01:00:01", "00:00:15", "00:00:45", "00:01:00", "00:00:50", "00:09:10", "00:50:00", "01:00:01", "00:00:15", "00:00:45", "00:01:00", "00:00:00"];
