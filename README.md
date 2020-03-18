@@ -1,5 +1,7 @@
 # just-time
  Add, Subtract, Compare and Create time as strings formatted "HH:mm:ss"
+ 
+ Inspired/Adapted from [duration-time-conversion](https://github.com/zhw2590582/duration-time-conversion) & [Harvey Zack](https://sleepy.im/)
 
 ## Install
 
@@ -88,4 +90,4 @@ justTime.timeStringNow();
 
 ## License
 
-MIT © Brad Duns
+MIT © [Brad Duns](http://www.bradduns.com)
