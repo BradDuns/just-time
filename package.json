@@ -1,0 +1,19 @@
+{
+  "name": "just-time",
+  "version": "1.0.0",
+  "description": "just-time allows you to work with formatted time strings (HH:mm:ss). Add, subtract, compare, create time strings without having to deal with dates and all that.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbdgiturl.com"
+  },
+  "keywords": [
+    "time",
+    "duration"
+  ],
+  "author": "BradDuns",
+  "license": "ISC"
+}
